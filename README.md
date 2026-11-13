@@ -62,7 +62,7 @@ $$A_a^T P + P A_a - P B_a R^{-1} B_a^T P + Q_a = 0$$
 
 yields the optimal full-state feedback gain matrix $K = R^{-1} B_a^T P = [K_x \;\vert\; K_q] \in \mathbb{R}^{2 \times 6}$. The control law becomes:
 
-$$u(t) = \operatorname{sat}_{[0, 10]}\left( u_0 - K_x (x(t) - x_0) - K_q \int_0^t (r(\tau) - y(\tau))\,d\tau \right)$$
+$$u(t) = \mathrm{sat}_{[0, 10]}\left( u_0 - K_x (x(t) - x_0) - K_q \int_0^t (r(\tau) - y(\tau))\,d\tau \right)$$
 
 ## 3. Continuous-Discrete Extended Kalman Filter (CD-EKF)
 
@@ -103,7 +103,7 @@ The full analytical test suite validates dynamic consistency, controller setpoin
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `nominal` | Fault-free (+setpoint step at $t=25\text{ s}$) | None ($0\text{ FA}$) | `nominal` (None) | $0.012\text{ cm}$ | PASSED |
 | `sensor_drift` | Sensor 3 ramp drift ($+0.025\text{ cm/s}$) | $7.0\text{ s}$ | `sensor_drift` (Ch 3) | $0.012\text{ cm}$ | PASSED |
-| `sensor_frozen` | Sensor 2 stuck transmitter ($y_2(t) = y_2(100\text{ s})$) | $9.5\text{ s}$ | `sensor_frozen` (Ch 2) | $0.012\text{ cm}$ | PASSED |
+| `sensor_frozen` | Sensor 2 stuck transmitter (`y₂(t) = y₂(100 s)`) | $9.5\text{ s}$ | `sensor_frozen` (Ch 2) | $0.012\text{ cm}$ | PASSED |
 | `sensor_bias` | Sensor 1 step bias ($+2.00\text{ cm}$) | $0.0\text{ s}$ | `sensor_bias` (Ch 1) | $0.0100\text{ cm}$ | PASSED |
 | `actuator_degradation` | Pump 1 loss of effectiveness ($-28\%$, $\tau=5\text{ s}$) | $7.5\text{ s}$ | `actuator_degradation` (Pump 1) | $0.012\text{ cm}$ | PASSED |
 | `tank_leak` | Tank 1 orifice leak ($a_{\text{leak}} = 0.018\text{ cm}^2$) | $5.5\text{ s}$ | `tank_leak` (Ch 1) | $0.012\text{ cm}$ | PASSED |
