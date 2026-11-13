@@ -108,6 +108,11 @@ The full analytical test suite validates dynamic consistency, controller setpoin
 | `actuator_degradation` | Pump 1 loss of effectiveness ($-28\%$, $\tau=5\text{ s}$) | $7.5\text{ s}$ | `actuator_degradation` (Pump 1) | $0.012\text{ cm}$ | PASSED |
 | `tank_leak` | Tank 1 orifice leak ($a_{\text{leak}} = 0.018\text{ cm}^2$) | $5.5\text{ s}$ | `tank_leak` (Ch 1) | $0.012\text{ cm}$ | PASSED |
 
+### Diagnostic & Control Plots
+
+[./docs/assets/control_theory_analysis.png]
+[./docs/assets/quad_tank_fdi_diagnostics.png]
+
 ## 6. Quickstart & Usage
 
 ### Installation
