@@ -110,9 +110,13 @@ The full analytical test suite validates dynamic consistency, controller setpoin
 
 ### Diagnostic & Control Plots
 
-[./docs/assets/control_theory_analysis.png]
+<p align="center">
+  <img src="./docs/assets/control_theory_analysis.png" alt="Control Theory Analysis" width="100%" />
+</p>
 
-[./docs/assets/quad_tank_fdi_diagnostics.png]
+<p align="center">
+  <img src="./docs/assets/quad_tank_fdi_diagnostics.png" alt="Quad-Tank FDI Diagnostics" width="100%" />
+</p>
 
 ## 6. Quickstart & Usage
 
