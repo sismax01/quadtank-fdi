@@ -1,6 +1,6 @@
 # `quadtank-fdi`: First-Principles Nonlinear Digital Twin & Observer-Based Fault Detection and Isolation (FDI)
 
-[CI](https://www.google.com/search?q=https://github.com/sismax01/quadtank-fdi/actions/workflows/ci.yml)
+[![CI](https://github.com/sismax01/quadtank-fdi/actions/workflows/ci.yml/badge.svg)](https://github.com/sismax01/quadtank-fdi/actions/workflows/ci.yml)
 
 
 
